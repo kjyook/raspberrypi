@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 class Obstacle:
     def __init__(self, spawn_position):
@@ -9,6 +10,5 @@ class Obstacle:
         self.outline = "#00FF00"
 
     def move(self):
-        while(self.position[3]<240):
-            self.position[1] += 5
-            self.position[3] += 5
+            self.position[0] -= 5
+            self.position[2] -= 5

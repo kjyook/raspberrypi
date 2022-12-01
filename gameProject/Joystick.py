@@ -41,8 +41,8 @@ class Joystick:
         self.button_D = DigitalInOut(board.D22)
         self.button_D.direction = Direction.INPUT
 
-        #self.button_C = DigitalInOut(board.D4)
-        #self.button_C.direction = Direction.INPUT
+        self.button_C = DigitalInOut(board.D4)
+        self.button_C.direction = Direction.INPUT
 
         # Turn on the Backlight
         self.backlight = DigitalInOut(board.D26)
